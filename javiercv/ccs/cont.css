@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ /* barra de menu */
+header{
+  text-align: center;
+  background: linear-gradient(
+    90deg, 
+    rgb(43, 59, 83) 20%, 
+    rgba(17, 22, 56, 0.918) 50%,
+    rgb(36, 33, 69) 100% );
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+ 
+}
+
+header h2 {
+  margin: 0;
+  text-align: left;
+ }
+
+nav ul{
+  background:linear-gradient(
+    90deg, 
+    rgb(43, 59, 83) 20%, 
+    rgba(17, 22, 56, 0.918) 50%,
+    rgb(36, 33, 69) 100% );
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  border-bottom:#000000 5px solid;
+  
+}
+
+nav li{
+  display: inline-flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+nav li :hover{
+ background-color: black;
+}
+
+/* barra de menu */
+
+
+.post-content {
+  background-color: #ffffff;
+  width: 40%;
+  margin: 0 auto; /* Para centrar horizontalmente */
+}
+
+.entry-content {
+  background-color: #ffffff1e;
+  padding: 20px; /* Añadido para dar espacio alrededor del formulario */
+}
+
+.form-container {
+  max-width: 600px; /* Ajusta según el ancho deseado */
+  margin: 0 auto; /* Para centrar horizontalmente */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; /* Para centrar los elementos internos */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Para centrar verticalmente */
+  align-items: center; /* Para centrar horizontalmente */
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+footer{
+  padding:20px;
+
+  color:#ffffff;
+  background-color:#263b48;
+  text-align: center;
+  font-family:cursive;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .post-content {
+    width: 90%;
+  }
+  
+  .form-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .post-content {
+    width: 95%;
+  }
+}
